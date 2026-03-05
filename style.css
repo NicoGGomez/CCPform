@@ -18,7 +18,7 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 5vh;
 }
@@ -74,6 +74,7 @@ form {
 form label {
     font-weight: bold;
     font-size: 20px;
+    cursor: pointer;
 }
 
 input {
@@ -94,10 +95,6 @@ button {
     padding: 8px;
     cursor: pointer;
     width: 200px;
-}
-
-.info {
-    margin-top: 10vh;
 }
 
 .error {
@@ -123,6 +120,7 @@ button {
 
 .form-preg {
     display: flex;
+    width: 80vh;
     justify-content: flex-start;
     align-items: start;
     gap: 5vh;

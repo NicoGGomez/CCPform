@@ -25,7 +25,7 @@ const contPregSiete = document.getElementById('preg-siete')
 const respuestaFinal = document.getElementById('respuesta-final')
 
 const errNombre = document.getElementById('error-nombre')
-const errPreg = document.getElementById('error-preg')
+const erroresPreg = document.querySelectorAll('.error-preg')
 
 let nombre, respuestaUno, respuestaDos, respuestaTres, respuestaCuatro, respuestaCinco, respuestaSeis, respuestaSiete
 
@@ -50,8 +50,10 @@ formPregUno.addEventListener('submit', (e) => {
     respuestaUno = datos.get('preguntaUno')
 
     if (!respuestaUno) {
-        errPreg.style.display = 'flex'
-        return
+    erroresPreg[0].style.display = 'flex'
+    return
+    } else {
+        erroresPreg[0].style.display = 'none'
     }
 
     contPregUno.style.display = 'none'
@@ -65,8 +67,10 @@ formPregDos.addEventListener('submit', (e) => {
     respuestaDos = datos.get('preguntaDos')
 
     if (!respuestaDos) {
-        errPreg.style.display = 'flex'
-        return
+    erroresPreg[1].style.display = 'flex'
+    return
+    } else {
+        erroresPreg[1].style.display = 'none'
     }
 
     contPregDos.style.display = 'none'
@@ -80,8 +84,10 @@ formPregTres.addEventListener('submit', (e) => {
     respuestaTres = datos.get('preguntaTres')
 
     if (!respuestaTres) {
-        errPreg.style.display = 'flex'
-        return
+    erroresPreg[2].style.display = 'flex'
+    return
+    } else {
+        erroresPreg[2].style.display = 'none'
     }
 
     contPregTres.style.display = 'none'
@@ -95,8 +101,10 @@ formPregCuatro.addEventListener('submit', (e) => {
     respuestaCuatro = datos.get('preguntaCuatro')
 
     if (!respuestaCuatro) {
-        errPreg.style.display = 'flex'
-        return
+    erroresPreg[3].style.display = 'flex'
+    return
+    } else {
+        erroresPreg[3].style.display = 'none'
     }
 
     contPregCuatro.style.display = 'none'
@@ -110,8 +118,10 @@ formPregCinco.addEventListener('submit', (e) => {
     respuestaCinco = datos.get('preguntaCinco')
 
     if (!respuestaCinco) {
-        errPreg.style.display = 'flex'
-        return
+    erroresPreg[4].style.display = 'flex'
+    return
+    } else {
+        erroresPreg[4].style.display = 'none'
     }
 
     contPregCinco.style.display = 'none'
@@ -125,8 +135,10 @@ formPregSeis.addEventListener('submit', (e) => {
     respuestaSeis = datos.get('preguntaSeis')
 
     if (!respuestaSeis) {
-        errPreg.style.display = 'flex'
-        return
+    erroresPreg[5].style.display = 'flex'
+    return
+    } else {
+        erroresPreg[5].style.display = 'none'
     }
 
     contPregSeis.style.display = 'none'
@@ -140,8 +152,10 @@ formPregSiete.addEventListener('submit', (e) => {
     respuestaSiete = datos.get('preguntaSiete')
 
     if (!respuestaSiete) {
-        errPreg.style.display = 'flex'
-        return
+    erroresPreg[6].style.display = 'flex'
+    return
+    } else {
+        erroresPreg[6].style.display = 'none'
     }
 
     contPregSiete.style.display = 'none'
