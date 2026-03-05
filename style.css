@@ -121,6 +121,7 @@ button {
 .form-preg {
     display: flex;
     width: 80vh;
+    max-width: 600px;
     justify-content: flex-start;
     align-items: start;
     gap: 5vh;
@@ -144,4 +145,60 @@ button {
 
 .error-preg p {
     font-size: 18px;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        gap: 3vh;
+        padding: 10px;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    .texto-superior {
+        width: 100%;
+        gap: 3vh;
+    }
+
+    .texto-superior h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .texto-superior p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .preg p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .form-preg {
+        width: 100%;
+        gap: 3vh;
+    }
+
+    .opcion {
+        width: 100%;
+    }
+
 }
