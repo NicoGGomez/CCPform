@@ -64,6 +64,11 @@ formPregDos.addEventListener('submit', (e) => {
     const datos = new FormData(formPregDos)
     respuestaDos = datos.get('preguntaDos')
 
+    if (!respuestaDos) {
+        errPreg.style.display = 'flex'
+        return
+    }
+
     contPregDos.style.display = 'none'
     contPregTres.style.display = 'flex'
 })
@@ -73,6 +78,11 @@ formPregTres.addEventListener('submit', (e) => {
 
     const datos = new FormData(formPregTres)
     respuestaTres = datos.get('preguntaTres')
+
+    if (!respuestaTres) {
+        errPreg.style.display = 'flex'
+        return
+    }
 
     contPregTres.style.display = 'none'
     contPregCuatro.style.display = 'flex'
@@ -84,6 +94,11 @@ formPregCuatro.addEventListener('submit', (e) => {
     const datos = new FormData(formPregCuatro)
     respuestaCuatro = datos.get('preguntaCuatro')
 
+    if (!respuestaCuatro) {
+        errPreg.style.display = 'flex'
+        return
+    }
+
     contPregCuatro.style.display = 'none'
     contPregCinco.style.display = 'flex'
 })
@@ -93,6 +108,11 @@ formPregCinco.addEventListener('submit', (e) => {
 
     const datos = new FormData(formPregCinco)
     respuestaCinco = datos.get('preguntaCinco')
+
+    if (!respuestaCinco) {
+        errPreg.style.display = 'flex'
+        return
+    }
 
     contPregCinco.style.display = 'none'
     contPregSeis.style.display = 'flex'
@@ -104,6 +124,11 @@ formPregSeis.addEventListener('submit', (e) => {
     const datos = new FormData(formPregSeis)
     respuestaSeis = datos.get('preguntaSeis')
 
+    if (!respuestaSeis) {
+        errPreg.style.display = 'flex'
+        return
+    }
+
     contPregSeis.style.display = 'none'
     contPregSiete.style.display = 'flex'
 })
@@ -113,6 +138,11 @@ formPregSiete.addEventListener('submit', (e) => {
 
     const datos = new FormData(formPregSiete)
     respuestaSiete = datos.get('preguntaSiete')
+
+    if (!respuestaSiete) {
+        errPreg.style.display = 'flex'
+        return
+    }
 
     contPregSiete.style.display = 'none'
     respuestaFinal.style.display = 'flex'
