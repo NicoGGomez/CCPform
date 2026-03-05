@@ -33,6 +33,7 @@ body {
 .nav img {
     width: fit-content;
     height: 110px;
+    user-select: none;
 }
 
 .info {
@@ -100,6 +101,15 @@ form label {
     height: 25px;
     width: 200px;
     padding: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.form-nombre input:hover {
+    background-color: #d9d9d9;
+    box-shadow: 7px 7px 0 rgba(0,0,0,0.3);
+    transition: .2s;
+    border-bottom: 2px solid #000;
 }
 
 button {
@@ -114,6 +124,12 @@ button {
     padding: 8px;
     cursor: pointer;
     width: 200px;
+}
+
+button:hover {
+    background-color: #4e4a90;
+    transition: .2s;
+    box-shadow: 7px 7px 0 rgba(0,0,0,0.3);
 }
 
 .error {
@@ -203,6 +219,14 @@ button {
 
 .respuesta img {
     width: 60vh;
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.3);
+    transition: .2s;
+}
+
+.respuesta img:hover {
+    transform: scale(105%);
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.3);
+    transition: .2s;
 }
 
 #codigo-creativo, #web-creators, #game-lab, #ia-accion {
