@@ -95,7 +95,7 @@ form label {
     cursor: pointer;
 }
 
-input {
+.form-nombre input {
     height: 25px;
     width: 200px;
     padding: 5px;
@@ -151,6 +151,19 @@ button {
     justify-content: start;
     align-items: self-start;
     gap: 5vh;
+}
+
+.opcion {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 90%;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcion input {
+    height: 5vh;
 }
 
 .contenedor-btn {
