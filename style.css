@@ -198,17 +198,20 @@ button {
 @media (max-width: 600px) {
 
     body {
-        gap: 3vh;
-        padding: 10px;
+        height: auto;
+        grid-template-rows: auto auto auto;
+        padding: 15px;
+        gap: 20px;
     }
 
-    img {
-        width: 200px;
+    .nav img {
+        width: 180px;
+        height: auto;
     }
 
     .texto-superior {
         width: 100%;
-        gap: 3vh;
+        gap: 20px;
     }
 
     .texto-superior h1 {
@@ -219,34 +222,62 @@ button {
     .texto-superior p {
         font-size: 16px;
         width: 100%;
+        text-align: center;
     }
 
     form {
         width: 100%;
+        gap: 15px;
     }
 
     input {
         width: 100%;
-        max-width: 250px;
+        max-width: 260px;
+        height: 35px;
     }
 
     button {
         width: 100%;
-        max-width: 250px;
+        max-width: 260px;
+    }
+
+    .preg {
+        gap: 30px;
+        text-align: center;
     }
 
     .preg p {
         font-size: 22px;
-        text-align: center;
     }
 
+    /* opciones en columna para celular */
     .form-preg {
-        width: 100%;
-        gap: 3vh;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     .opcion {
         width: 100%;
+        max-width: 300px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .contenedor-btn {
+        width: 100%;
+    }
+
+    .respuesta p,
+    .respuesta a {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .respuesta img {
+        width: 100%;
+        max-width: 280px;
     }
 
 }
