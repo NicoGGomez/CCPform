@@ -278,6 +278,7 @@ button {
         align-items: center;
         justify-content: center;
         text-align: start;
+        margin-bottom: 2px;
     }
 
     .contenedor-btn {
