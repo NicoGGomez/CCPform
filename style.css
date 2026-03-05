@@ -100,9 +100,16 @@ button {
     margin-top: 10vh;
 }
 
-/* FORM PREGUNTA UNO */
+.form-nombre .error {
+    display: none;
+    background-color: red;
+    color: #fff;
+    padding: 2vh;
+}
 
-.preg-uno {
+/* FORM PREGUNTA */
+
+.preg {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -110,11 +117,11 @@ button {
     gap: 5vh;
 }
 
-.preg-uno p {
+.preg p {
     font-size: 35px;
 }
 
-.form-preg-uno {
+.form-preg {
     display: flex;
     justify-content: flex-start;
     align-items: start;
