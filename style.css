@@ -48,7 +48,7 @@ img {
 
 .texto-superior {
     display: flex;
-    width: 80%;
+    width: 90%;
     flex-direction: column;
     align-items: center;
     gap: 5vh;
@@ -60,7 +60,7 @@ img {
 
 .texto-superior p {
     font-size: 18px;
-    width: 75vh;
+    width: 90vh;
     text-align: center;
 }
 
@@ -108,6 +108,7 @@ button {
 /* FORM PREGUNTA */
 
 .preg {
+    width: 90%;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -119,11 +120,18 @@ button {
     font-size: 35px;
 }
 
+.contenedor-preg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .form-preg {
     display: flex;
-    width: 80vh;
-    justify-content: flex-start;
-    align-items: start;
+    width: 100%;
+    justify-content: start;
+    align-items: self-start;
     gap: 5vh;
 }
 
