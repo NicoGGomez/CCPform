@@ -72,6 +72,8 @@ formPregUno.addEventListener('submit', (e) => {
         erroresPreg[0].style.display = 'none'
     }
 
+    sumarPuntos(respuestaUno)
+
     contPregUno.style.display = 'none'
     contPregDos.style.display = 'flex'
 })
@@ -88,6 +90,8 @@ formPregDos.addEventListener('submit', (e) => {
     } else {
         erroresPreg[1].style.display = 'none'
     }
+
+    sumarPuntos(respuestaDos)
 
     contPregDos.style.display = 'none'
     contPregTres.style.display = 'flex'
@@ -106,6 +110,8 @@ formPregTres.addEventListener('submit', (e) => {
         erroresPreg[2].style.display = 'none'
     }
 
+    sumarPuntos(respuestaTres)
+
     contPregTres.style.display = 'none'
     contPregCuatro.style.display = 'flex'
 })
@@ -122,6 +128,8 @@ formPregCuatro.addEventListener('submit', (e) => {
     } else {
         erroresPreg[3].style.display = 'none'
     }
+
+    sumarPuntos(respuestaCuatro)
 
     contPregCuatro.style.display = 'none'
     contPregCinco.style.display = 'flex'
@@ -140,6 +148,8 @@ formPregCinco.addEventListener('submit', (e) => {
         erroresPreg[4].style.display = 'none'
     }
 
+    sumarPuntos(respuestaCinco)
+
     contPregCinco.style.display = 'none'
     contPregSeis.style.display = 'flex'
 })
@@ -157,6 +167,8 @@ formPregSeis.addEventListener('submit', (e) => {
         erroresPreg[5].style.display = 'none'
     }
 
+    sumarPuntos(respuestaSeis)
+
     contPregSeis.style.display = 'none'
     contPregSiete.style.display = 'flex'
 })
@@ -173,21 +185,13 @@ formPregSiete.addEventListener('submit', (e) => {
     } else {
         erroresPreg[6].style.display = 'none'
     }
-
-    sumarPuntos(respuestaUno)
-    sumarPuntos(respuestaDos)
-    sumarPuntos(respuestaTres)
-    sumarPuntos(respuestaCuatro)
-    sumarPuntos(respuestaCinco)
-    sumarPuntos(respuestaSeis)
-
     // la 7 no suma porque es solo si ya participó
 
     let resultado = ''
 
     if (codigoCreativo >= webCreators && codigoCreativo >= gameLab && codigoCreativo >= iaAccion) {
         resultado = 'Código Creativo'
-            contPregSiete.style.display = 'none'
+        contPregSiete.style.display = 'none'
         respuestaFinal.style.display = 'flex'
         codCreativo.style.display = 'flex'
     }
@@ -201,9 +205,9 @@ formPregSiete.addEventListener('submit', (e) => {
         resultado = 'Game Lab'
         contPregSiete.style.display = 'none'
         respuestaFinal.style.display = 'flex'
-        gameLab.style.display = 'flex'
+        gamLab.style.display = 'flex'
     }
-    else {
+    else { 
         resultado = 'IA en Acción'
         contPregSiete.style.display = 'none'
         respuestaFinal.style.display = 'flex'
