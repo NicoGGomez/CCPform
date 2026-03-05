@@ -11,25 +11,64 @@
 
     <img src="imgs/logo.png" alt="">
 
-    <div class="menu-principal">
+    <div class="form-nombre">
 
-        <div class="texto-superior">
-            <h1>QUIZ: Descubrí tu próxima experiencia Chicas Digitalers</h1>
+        <div class="menu-principal">
 
-            <p>Todas podemos crear tecnología Este mini quiz te ayuda a descubrir cuál es la mejor experiencia para vos. Recordá que no necesitás tener conocimientos previos para participar en ninguna de las experiencias (Si ya hiciste alguna experiencia, lo vamos a tener en cuenta.)</p>
+            <div class="texto-superior">
+                <h1>QUIZ: Descubrí tu próxima experiencia Chicas Digitalers</h1>
+
+                <p>Todas podemos crear tecnología Este mini quiz te ayuda a descubrir cuál es la mejor experiencia para vos. Recordá que no necesitás tener conocimientos previos para participar en ninguna de las experiencias (Si ya hiciste alguna experiencia, lo vamos a tener en cuenta.)</p>
+            </div>
+
+            <form id="form-nombre" action="">
+                <label for="nombre">Ingresa tu nombre</label>
+                <input name="nombre" id="nombre" type="text">
+                <button type="submit">Comenzar</button>
+            </form>
+
+            <div class="info">
+                <b>by @Cprgogramadoras</b>
+            </div>
+
         </div>
-
-        <form action="">
-            <label for="nombre">Ingresa tu nombre</label>
-            <input id="nombre" placeholder="" type="text">
-            <button type="submit">Comenzar</button>
-        </form>
-
-        <div class="info">
-            <b>by @Cprgogramadoras</b>
-        </div>
-
     </div>
+
+    <div class="preg-uno">
+        <div class="contador-preg">
+            <p>Pregunta 1 de 7</p>
+        </div>
+
+        <p>1. ¿En qué momento sentís que estás?</p>
+
+        <form action="" class="form-preg-uno">
+            <div class="opcion">
+                <input type="radio" name="preguntaUno" id="pregUno-opcionUno">
+                <label for="pregUno-opcionUno">
+                A) Quiero dar mis primeros pasos y entender lo básico.
+                </label>
+            </div>
+
+            <div class="opcion">
+                <input type="radio" name="preguntaUno" id="pregUno-opcionDos">
+                <label for="pregUno-opcionDos">
+                B) Ya probé algo y quiero construir cosas más completas.
+                </label>
+            </div>
+
+            <div class="opcion">
+                <input type="radio" name="preguntaUno" id="pregUno-opcionTres">
+                <label for="pregUno-opcionTres">
+                C) Quiero innovar, crear proyectos más desafiantes y liderar ideas.</label>
+            </div>
+
+            <div class="contenedor-btn">
+                <button type="submit">Siguiente</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

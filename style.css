@@ -27,6 +27,15 @@ img {
     width: fit-content;
 }
 
+/* FORM NOMBRE */
+
+.form-nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .menu-principal {
     width: 100%;
     display: flex;
@@ -56,6 +65,8 @@ img {
 
 form {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 3vh;
 }
@@ -82,8 +93,36 @@ button {
     border-radius: 6px 6px 6px 6px;
     padding: 8px;
     cursor: pointer;
+    width: 200px;
 }
 
 .info {
     margin-top: 10vh;
+}
+
+/* FORM PREGUNTA UNO */
+
+.preg-uno {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.preg-uno p {
+    font-size: 35px;
+}
+
+.form-preg-uno {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 5vh;
+}
+
+.contenedor-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
