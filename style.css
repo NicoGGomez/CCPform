@@ -100,7 +100,7 @@ button {
     margin-top: 10vh;
 }
 
-.form-nombre .error {
+.error {
     display: none;
     background-color: red;
     color: #fff;
@@ -130,6 +130,20 @@ button {
 
 .contenedor-btn {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 2vh;
     width: 100%;
+}
+
+.error-preg {
+    display: none;
+    background-color: red;  
+    color: #fff;
+    padding: 2vh;   
+}
+
+.error-preg p {
+    font-size: 18px;
 }

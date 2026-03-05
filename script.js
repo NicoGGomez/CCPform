@@ -1,6 +1,5 @@
 const formNombre = document.getElementById('form-nombre')
 const contFormNombre = document.querySelector('.form-nombre')
-const errNombre = document.getElementById('error-nombre')
 
 const formPregUno = document.getElementById('form-preg-uno') 
 const contPregUno = document.getElementById('preg-uno')
@@ -25,6 +24,9 @@ const contPregSiete = document.getElementById('preg-siete')
 
 const respuestaFinal = document.getElementById('respuesta-final')
 
+const errNombre = document.getElementById('error-nombre')
+const errPreg = document.getElementById('error-preg')
+
 let nombre, respuestaUno, respuestaDos, respuestaTres, respuestaCuatro, respuestaCinco, respuestaSeis, respuestaSiete
 
 formNombre.addEventListener('submit', (e) => {
@@ -46,6 +48,11 @@ formPregUno.addEventListener('submit', (e) => {
 
     const datos = new FormData(formPregUno)
     respuestaUno = datos.get('preguntaUno')
+
+    if (!respuestaUno) {
+        errPreg.style.display = 'flex'
+        return
+    }
 
     contPregUno.style.display = 'none'
     contPregDos.style.display = 'flex'
@@ -113,6 +120,5 @@ formPregSiete.addEventListener('submit', (e) => {
     alert(nombre + respuestaUno + respuestaDos + respuestaTres + respuestaCuatro + respuestaCinco + respuestaSeis + respuestaSiete)
 })
 
-if()
 
 
