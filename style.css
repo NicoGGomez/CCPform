@@ -200,8 +200,18 @@ button {
     body {
         height: auto;
         grid-template-rows: auto auto auto;
-        padding: 15px;
         gap: 20px;
+    }
+
+    .contenido {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .error p, .error-preg p {
+        font-size: 18px;
     }
 
     .nav img {
@@ -227,13 +237,15 @@ button {
 
     form {
         width: 100%;
-        gap: 15px;
+        gap: 10px;
     }
 
     input {
-        width: 100%;
         max-width: 260px;
         height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     button {
@@ -242,7 +254,7 @@ button {
     }
 
     .preg {
-        gap: 30px;
+        gap: 40px;
         text-align: center;
     }
 
@@ -252,17 +264,19 @@ button {
 
     /* opciones en columna para celular */
     .form-preg {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: self-start;
+        gap: 25px;
     }
 
     .opcion {
         width: 100%;
-        max-width: 300px;
         display: flex;
-        gap: 10px;
         align-items: center;
+        justify-content: space-between;
+        text-align: start;
     }
 
     .contenedor-btn {
