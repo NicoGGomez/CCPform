@@ -195,19 +195,19 @@ formPregSiete.addEventListener('submit', (e) => {
         resultado = 'Web Creators'
         contPregSiete.style.display = 'none'
         respuestaFinal.style.display = 'flex'
-        codCreativo.style.display = 'flex'
+        webCrea.style.display = 'flex'
     }
     else if (gameLab >= codigoCreativo && gameLab >= webCreators && gameLab >= iaAccion) {
         resultado = 'Game Lab'
         contPregSiete.style.display = 'none'
         respuestaFinal.style.display = 'flex'
-        codCreativo.style.display = 'flex'
+        gameLab.style.display = 'flex'
     }
     else {
         resultado = 'IA en Acción'
         contPregSiete.style.display = 'none'
         respuestaFinal.style.display = 'flex'
-        codCreativo.style.display = 'flex'
+        iaAcc.style.display = 'flex'
     }
 })
 
