@@ -27,7 +27,23 @@ const respuestaFinal = document.getElementById('respuesta-final')
 const errNombre = document.getElementById('error-nombre')
 const erroresPreg = document.querySelectorAll('.error-preg')
 
+const codCreativo = document.getElementById('codigo-creativo')
+const webCrea = document.getElementById('web-creators')
+const gamLab = document.getElementById('game-lab')
+const iaAcc = document.getElementById('ia-accion')
+
 let nombre, respuestaUno, respuestaDos, respuestaTres, respuestaCuatro, respuestaCinco, respuestaSeis, respuestaSiete
+let codigoCreativo = 0
+let webCreators = 0
+let gameLab = 0
+let iaAccion = 0
+
+function sumarPuntos(respuesta) {
+    if (respuesta === 'A') codigoCreativo++
+    if (respuesta === 'B') webCreators++
+    if (respuesta === 'C') gameLab++
+    if (respuesta === 'D') iaAccion++
+}
 
 formNombre.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -158,10 +174,41 @@ formPregSiete.addEventListener('submit', (e) => {
         erroresPreg[6].style.display = 'none'
     }
 
-    contPregSiete.style.display = 'none'
-    respuestaFinal.style.display = 'flex'
+    sumarPuntos(respuestaUno)
+    sumarPuntos(respuestaDos)
+    sumarPuntos(respuestaTres)
+    sumarPuntos(respuestaCuatro)
+    sumarPuntos(respuestaCinco)
+    sumarPuntos(respuestaSeis)
 
-    alert(nombre + respuestaUno + respuestaDos + respuestaTres + respuestaCuatro + respuestaCinco + respuestaSeis + respuestaSiete)
+    // la 7 no suma porque es solo si ya participó
+
+    let resultado = ''
+
+    if (codigoCreativo >= webCreators && codigoCreativo >= gameLab && codigoCreativo >= iaAccion) {
+        resultado = 'Código Creativo'
+            contPregSiete.style.display = 'none'
+        respuestaFinal.style.display = 'flex'
+        codCreativo.style.display = 'flex'
+    }
+    else if (webCreators >= codigoCreativo && webCreators >= gameLab && webCreators >= iaAccion) {
+        resultado = 'Web Creators'
+        contPregSiete.style.display = 'none'
+        respuestaFinal.style.display = 'flex'
+        codCreativo.style.display = 'flex'
+    }
+    else if (gameLab >= codigoCreativo && gameLab >= webCreators && gameLab >= iaAccion) {
+        resultado = 'Game Lab'
+        contPregSiete.style.display = 'none'
+        respuestaFinal.style.display = 'flex'
+        codCreativo.style.display = 'flex'
+    }
+    else {
+        resultado = 'IA en Acción'
+        contPregSiete.style.display = 'none'
+        respuestaFinal.style.display = 'flex'
+        codCreativo.style.display = 'flex'
+    }
 })
 
 
