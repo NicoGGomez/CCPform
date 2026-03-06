@@ -1,3 +1,9 @@
+setPreguntasUno = {
+    'A': 'Quiero dar mis primeros pasos y entender lo básico.',
+    'B': 'Ya probé algo y quiero construir cosas más completas.',
+    'C': 'Quiero innovar, crear proyectos más desafiantes y liderar ideas.'
+}
+
 const formNombre = document.getElementById('form-nombre')
 const contFormNombre = document.querySelector('.form-nombre')
 
@@ -190,6 +196,16 @@ formPregSiete.addEventListener('submit', (e) => {
     // la 7 no suma porque es solo si ya participó
 
     let resultado = ''
+
+    fetch("https://script.google.com/macros/s/AKfycbzYBnQsA96DXjMAk5zk1DoFnyOghpea4oJxfB878z3renG3LWgWjv33S8udLgX4PuOJ/exec", {
+    method: "POST",
+    body: JSON.stringify({
+        nombre: "Nico",
+        rtaUno: setPreguntasUno[respuestaUno]
+    })
+    })
+    .then(res => res.json())
+    .then(data => console.log(data));
 
     textoResultado.textContent = `${nombre}, te sugerimos esta experiencia en base a tus respuestas:`
 
