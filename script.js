@@ -32,6 +32,8 @@ const webCrea = document.getElementById('web-creators')
 const gamLab = document.getElementById('game-lab')
 const iaAcc = document.getElementById('ia-accion')
 
+const textoResultado = document.getElementById('texto-resultado')
+
 let nombre, respuestaUno, respuestaDos, respuestaTres, respuestaCuatro, respuestaCinco, respuestaSeis, respuestaSiete
 let codigoCreativo = 0
 let webCreators = 0
@@ -188,6 +190,8 @@ formPregSiete.addEventListener('submit', (e) => {
     // la 7 no suma porque es solo si ya participó
 
     let resultado = ''
+
+    textoResultado.textContent = `${nombre}, te sugerimos esta experiencia en base a tus respuestas:`
 
     if (codigoCreativo >= webCreators && codigoCreativo >= gameLab && codigoCreativo >= iaAccion) {
         resultado = 'Código Creativo'
