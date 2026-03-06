@@ -242,7 +242,7 @@ formPregSiete.addEventListener('submit', (e) => {
     method: "POST",
     body: JSON.stringify({
         token: '4a5b7e9a8c6c8d7b9c6c7f6e4f9b0d1b0d9a7c8e4a3b2c1d9f0e8a7b6c5d4e3',
-        nombre: "Nico",
+        nombre: nombre,
         origin: 'https://clubchicasprogramadorasquiz.netlify.app/',
         rtaUno: setPreguntasUno[respuestaUno],
         rtaDos : setPreguntasDos[respuestaDos],
