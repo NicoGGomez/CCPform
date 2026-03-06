@@ -238,7 +238,7 @@ formPregSiete.addEventListener('submit', (e) => {
 
     let resultado = ''
 
-    fetch("https://script.google.com/macros/s/AKfycbzYBnQsA96DXjMAk5zk1DoFnyOghpea4oJxfB878z3renG3LWgWjv33S8udLgX4PuOJ/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbzk69NZQm1X_byxvuIp8nXB9sr97itijtWBUCb6hGcM28VyXSLX6ZmH-x6C-ei7ZCI/exec", {
     method: "POST",
     body: JSON.stringify({
         token: '4a5b7e9a8c6c8d7b9c6c7f6e4f9b0d1b0d9a7c8e4a3b2c1d9f0e8a7b6c5d4e3',
