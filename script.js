@@ -4,6 +4,47 @@ setPreguntasUno = {
     'C': 'Quiero innovar, crear proyectos más desafiantes y liderar ideas.'
 }
 
+setPreguntasDos = {
+    'A': 'Descubrir cómo funciona la programación por bloques.',
+    'B': 'Escribir código y crear algo propio desde cero.',
+    'C': 'Usar tecnología avanzada para generar impacto real.'
+}
+
+setPreguntasTres = {
+    'A': 'Algo divertido, creativo y paso a paso.',
+    'B': 'Un desafío más técnico aprendiendo herramientas concretas.',
+    'C': 'Un desafío profundo combinando creatividad, análisis y liderazgo.'
+}
+
+setPreguntasCuatro = {
+    'A': 'Un programa o app sencilla para resolver algo cotidiano.',
+    'B': 'Mi propia página web con mi estilo.',
+    'C': 'Un videojuego interactivo.',
+    'D': 'Un proyecto con inteligencia artificial.'
+}
+
+setPreguntasCinco = {
+    'A': 'Lógica',
+    'B': 'Diseño',
+    'C': 'Juego',
+    'D': 'Innovación'
+}
+
+setPreguntasSeis = {
+    'A': 'Entendiendo cómo funciona todo desde la base.',
+    'B': 'Creando sitios web o programando en distintos lenguajes.',
+    'C': 'Diseñando experiencias interactivas.',
+    'D': 'Trabajando con IA o tecnología avanzada.'
+}
+
+setPreguntasSiete = {
+    'A': 'No, sería mi primera vez.',
+    'B': 'Sí, Código Creativo.',
+    'C': 'Sí, Web Creators.',
+    'D': 'Sí, Game Lab.',
+    'E': 'Sí, IA en Acción.'
+}
+
 const formNombre = document.getElementById('form-nombre')
 const contFormNombre = document.querySelector('.form-nombre')
 
@@ -200,8 +241,16 @@ formPregSiete.addEventListener('submit', (e) => {
     fetch("https://script.google.com/macros/s/AKfycbzYBnQsA96DXjMAk5zk1DoFnyOghpea4oJxfB878z3renG3LWgWjv33S8udLgX4PuOJ/exec", {
     method: "POST",
     body: JSON.stringify({
+        token: '4a5b7e9a8c6c8d7b9c6c7f6e4f9b0d1b0d9a7c8e4a3b2c1d9f0e8a7b6c5d4e3',
         nombre: "Nico",
-        rtaUno: setPreguntasUno[respuestaUno]
+        origin: 'https://clubchicasprogramadorasquiz.netlify.app/',
+        rtaUno: setPreguntasUno[respuestaUno],
+        rtaDos : setPreguntasDos[respuestaDos],
+        rtaTres : setPreguntasTres[respuestaTres],
+        rtaCuatro : setPreguntasCuatro[respuestaCuatro],
+        rtaCinco : setPreguntasCinco[respuestaCinco],
+        rtaSeis : setPreguntasSeis[respuestaSeis],
+        rtaSiete : setPreguntasSiete[respuestaSiete]
     })
     })
     .then(res => res.json())
