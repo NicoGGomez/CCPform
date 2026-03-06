@@ -133,11 +133,15 @@ button:hover {
     box-shadow: 7px 7px 0 rgba(0,0,0,0.3);
 }
 
-.error {
+.error{
     display: none;
     background-color: red;
     color: #fff;
     padding: 2vh;
+}
+
+.error p{
+    font-size: 18px;
 }
 
 /* FORM PREGUNTA */
