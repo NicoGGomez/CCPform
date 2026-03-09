@@ -234,7 +234,12 @@ formPregSiete.addEventListener('submit', (e) => {
     } else {
         erroresPreg[6].style.display = 'none'
     }
-    // la 7 no suma porque es solo si ya participó
+    
+    // evitar recomendar curso ya realizado
+    if (respuestaSiete === 'B') codigoCreativo = -999
+    if (respuestaSiete === 'C') webCreators = -999
+    if (respuestaSiete === 'D') gameLab = -999
+    if (respuestaSiete === 'E') iaAccion = -999
 
     let resultado = ''
 
